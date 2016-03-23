@@ -1,6 +1,90 @@
 #home-page {
+  @include background;
   h1 {
-    color: red;
+    color: $white;
     font-family: $header;
+    margin-top: 0;
+    font-weight: 800;
+    font-size: 8em;
+    letter-spacing: 1px;
+    text-align: left;
+    @include rem-fallback(padding-bottom, 1);
+    .strong {
+      font-weight: 400;
+      font-size: 1.15em;
+    }
+  }
+  p {
+    font-size: 3em;
+    text-align: left;
+    color: $white;
+    font-family: $text;
+    @include rem-fallback(padding-bottom, 1);
+  }
+  .header,
+  .left {
+    float: left;
+  }
+  .header {
+    @include background;
+    background-color: $navy;
+    text-align: left;
+    width: 415px;
+    border-left: 3px solid $white;
+    height: 100%;
+    @include rem-fallback(padding, 3, 2, 0);
+  }
+  .left {
+    @include background;
+    background: url('images/JOSH-HOLDER-Portfolio Render-2.jpg');
+    width: 150px;
+    height: 100%;
+  }
+  .right {
+    float: right;
+    @include background;
+    background-image:url('images/JOSH-HOLDER-Portfolio Render-2.jpg');
+    height: 100%;
+  }
+  .logo {
+  }
+  .artwork-link {
+    font-size: 5em;
+    font-family: $header;
+    color: $white;
+    &:hover {
+      color: $teal;
+      text-decoration: none;
+    }
+    &:visited,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+  .top {
+    min-height: 635px;
+  }
+
+
+/***********
+ * ARTWORK *
+ ***********/
+
+  .artwork {
+    @include background;
+    background-color: $navy;
+    @include rem-fallback(padding, 4, 0);
+    .artwork-wrapper {
+      // max-width: 750px;
+      margin: 0 auto;
+    }
+    .image {
+      @include background;
+      margin: 0 auto;
+      float: left;
+      width: 150px;
+      height: 150px;
+    }
   }
 }

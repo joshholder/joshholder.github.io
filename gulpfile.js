@@ -11,7 +11,7 @@ uglify = require('gulp-uglify');
 
 gulp.task('script', function() {
   gulp.src('./scripts/**/*.js')
-    .pipe(concat('bundled.js'))
+    .pipe(concat('js/bundled.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./'));
 });

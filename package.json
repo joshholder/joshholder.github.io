@@ -4,7 +4,10 @@
   "scripts": {},
   "author": "Jimmy Pocock",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "hover.css": "^2.0.2",
+    "wallop": "^2.2.4"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
