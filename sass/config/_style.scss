@@ -1,0 +1,77 @@
+/***************
+ * BASIC STYLE *
+ ***************/
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html{
+  height: 100%;
+  font-size: 16px;
+
+  body {
+    font-size: 62.5%;
+    color: $darkGrey;
+    background-color: $white;
+  }
+}
+
+.container, .container-fluid {
+  padding: 0;
+  margin: 0 auto;
+  @include mobile {
+    @include rem-fallback(padding, 0, 1);
+  }
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+  color: $darkGrey;
+  font-family: $header;
+  text-align: center;
+  line-height: 1.4;
+}
+
+p {
+  font-family: $text;
+}
+
+h2 {
+  font-family: $header;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+a {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:visited,
+  &:focus,
+  &:hover {
+    text-decoration:none;
+  }
+}
+
+a,
+button,
+input {
+  outline: 0 !important;
+}
+
+div[class^="col-"], div[class*=" col-"] {
+  padding: 0;
+}
