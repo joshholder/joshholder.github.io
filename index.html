@@ -10,11 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Paytone+One|Exo:400,900|Work+Sans:400,800,300" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="node_modules/wallop/css/wallop.css">
-    <link rel="stylesheet" href="node_modules/hover.css/css/hover-min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="node_modules/wallop/js/Wallop.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="hover/hover-min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   </head>
   <body>
     <div id="home-page">
@@ -32,8 +30,24 @@
       <a name="artwork"></a>
       <div class="artwork">
         <div class="container">
-          <h2>Artwork</h2>
+          <h2>My Artwork</h2>
           <div class="artwork-wrapper">
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/Character-Model-Render.jpg');"></div></div>
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/Character-Model.jpg');"></div></div>
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/FINAL-RENDER-SHOOPED-CORRECTION.jpg');"></div></div>
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/Ihop-Render-Money-Shot.jpg');"></div></div>
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/JOSH%20HOLDER%20Portfolio%20Render%20A.jpg');"></div></div>
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/Josh%20Holder_RENDER%202.jpg');"></div></div>
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/JOSH-HOLDER-Portfolio%20Render-1.jpg');"></div></div>
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/JOSH-HOLDER-Portfolio%20Render-2.jpg');"></div></div>
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/Josh-Holder-Render-3.jpg');"></div></div>
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/JoshHolder_1.jpg');"></div></div>
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/OfficeRender1.jpg');"></div></div>
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/OfficeRender2.jpg');"></div></div>
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/RENDER1_Josh%20Holder.jpg');"></div></div>
+            <div class="image-wrapper"><div class="image" style="background-image: url('images/SLASH.jpg');"></div></div>
+          </div>
+          <div class="artwork-nav">
             <div class="image-wrapper"><div class="image" style="background-image: url('images/Character-Model-Render.jpg');"></div></div>
             <div class="image-wrapper"><div class="image" style="background-image: url('images/Character-Model.jpg');"></div></div>
             <div class="image-wrapper"><div class="image" style="background-image: url('images/FINAL-RENDER-SHOOPED-CORRECTION.jpg');"></div></div>
@@ -51,37 +65,28 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal fade" id="gallery-modal" tabindex="-1" role="dialog" aria-labelledby="gallery-label" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="Wallop">
-            <div class="gallery Wallop-list">
-              <div class="Wallop-item"><img src="images/Character-Model-Render.jpg"></div>
-              <div class="Wallop-item"><img src="images/Character-Model.jpg"></div>
-              <div class="Wallop-item"><img src="images/FINAL-RENDER-SHOOPED-CORRECTION.jpg"></div>
-              <div class="Wallop-item"><img src="images/Ihop-Render-Money-Shot.jpg"></div>
-              <div class="Wallop-item"><img src="images/JOSH%20HOLDER%20Portfolio%20Render%20A.jpg"></div>
-              <div class="Wallop-item"><img src="images/Josh%20Holder_RENDER%202.jpg"></div>
-              <div class="Wallop-item"><img src="images/JOSH-HOLDER-Portfolio%20Render-1.jpg"></div>
-              <div class="Wallop-item"><img src="images/JOSH-HOLDER-Portfolio%20Render-2.jpg"></div>
-              <div class="Wallop-item"><img src="images/Josh-Holder-Render-3.jpg"></div>
-              <div class="Wallop-item"><img src="images/JoshHolder_1.jpg"></div>
-              <div class="Wallop-item"><img src="images/OfficeRender1.jpg"></div>
-              <div class="Wallop-item"><img src="images/OfficeRender2.jpg"></div>
-              <div class="Wallop-item"><img src="images/RENDER1_Josh%20Holder.jpg"></div>
-              <div class="Wallop-item"><img src="images/SLASH.jpg"></div>
-            </div>
-            <button class="Wallop-buttonPrevious">Previous</button>
-            <button class="Wallop-buttonNext">Next</button>
+
+      <div class="video">
+        <div class="container">
+          <h2>Custom Animation</h2>
+          <div class="iframe-wrapper">
+            <iframe src="https://www.youtube.com/embed/yEWxakfm78Q" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
+
+      <div class="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <a href="https://www.linkedin.com/in/josh-holder-a89a2256" target="_blank">LinkedIn</a>
+          <i class="fa fa-dot-circle-o"></i>
+          <a href="mailto:hold3r@yahoo.com">hold3r@yahoo.com</a>
+        </div>
+      </div>
     </div>
-    <script>
-      var wallopEl = document.querySelector('.Wallop');
-      var slider = new Wallop(wallopEl);
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/bundled.js"></script>
   </body>
 </html>

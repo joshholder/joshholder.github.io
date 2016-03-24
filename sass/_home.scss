@@ -14,6 +14,16 @@
       font-size: 1.15em;
     }
   }
+  h2 {
+    color: $white;
+    font-family: $header;
+    margin-top: 0;
+    // font-weight: 800;
+    font-size: 7.25em;
+    letter-spacing: 1px;
+    text-align: center;
+    @include rem-fallback(padding-bottom, 1);
+  }
   p {
     font-size: 3em;
     text-align: left;
@@ -37,6 +47,7 @@
   .left {
     @include background;
     background: url('images/JOSH-HOLDER-Portfolio Render-2.jpg');
+    border-bottom: 3px solid $white;
     width: 150px;
     height: 100%;
   }
@@ -66,7 +77,6 @@
     min-height: 635px;
   }
 
-
 /***********
  * ARTWORK *
  ***********/
@@ -74,10 +84,12 @@
   .artwork {
     @include background;
     background-color: $navy;
-    @include rem-fallback(padding, 4, 0);
-    .artwork-wrapper {
-      // max-width: 750px;
-      margin: 0 auto;
+    @include rem-fallback(padding, 6, 0);
+    .container {
+      max-width: 850px;
+    }
+    h2 {
+      @include rem-fallback(padding-bottom, 3);
     }
     .image {
       @include background;
@@ -85,6 +97,82 @@
       float: left;
       width: 150px;
       height: 150px;
+      border: 2px solid $white;
+    }
+    .artwork-wrapper {
+      // max-width: 750px;
+      margin: 0 auto;
+
+      @include rem-fallback(margin-bottom, 4);
+      .image {
+        @include background;
+        margin: 0 auto;
+        // float: left;
+        width: 100%;
+        height: 500px;
+      }
+    }
+    // .artwork-nav
+    .slick-dots {
+      button:before {
+        color: $white;
+      }
     }
   }
+
+
+/*******************
+ * VIDEO 420 x 315 *
+ *******************/
+  $videoW: 420px;
+  $videoH: 315px;
+
+  .video {
+    @include background;
+    background-color: $white;
+    @include rem-fallback(padding, 6, 0);
+    h2 {
+      color: $navy;
+      @include rem-fallback(padding-bottom, 3);
+    }
+
+    .iframe-wrapper {
+      width: ($videoH * 2.5);
+      height: ($videoH * 1.5);
+      margin: 0 auto;
+      box-shadow: 0 3px 6px rgba($black, 0.5);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+/***********
+ * CONTACT *
+ ***********/
+
+  .contact {
+    @include background;
+    background-color: $teal;
+    text-align: center;
+    @include rem-fallback(padding, 6, 0, 8);
+    h2 {
+      @include rem-fallback(padding-bottom, 3);
+    }
+
+    a {
+      color: $white;
+      font-size: 4em;
+    }
+
+    .fa {
+      color: $white;
+      font-size: 4em;
+      padding: 0 1rem;
+
+    }
+  }
+
 }
